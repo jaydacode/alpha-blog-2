@@ -1,23 +1,52 @@
 class ArticlesController < ApplicationController
+    
+  def index
+    @articles = Article.all #you can name this anything you like, teacher uses @articles cuz easier to work with
+  end
   
   def new
     @article = Article.new
   end
   
+  def edit
+    @article = Article.find(params[:id])
+  end
+
   def create
-    #render plain: params[:article].inspect #there is no views page for this, we just want it to return
-    @article = Article.new(article_params) #Added method article_params to white list the values of article
-    @article.save #once article is saved it works but needs to what to do. We want to redirect to the articles_show view so we create that redirect
-    redirect_to_articles_show(@article) #this will pass in the article
+    @article = Article.new(article_params)
+    if @article.save
+      flash[:notice] = "Article was successfully created"
+      redirect_to article_path(@article)
+    else
+      render 'new'
+    end
+  end
+  
+  def update
+    @article = Article.find(params[:id])
+    if @article.update(article_params)
+      flash[:notice] = "Article was successfully updated"
+      redirect_to article_path(@article)
+    else
+      render 'edit'
+    end
   end
   
   def show
-    
+    @article = Article.find(params[:id])
   end
   
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    flash[:notice] = "Article was successfully deleted"
+    redirect_to articles_path
+  end
+
   private
-    def article_params #this defines the article_params method created in def create
-      params.require(:article).permit(:title, :description)
-    end
-  
+  def article_params
+    params.require(:article).permit(:title, :description)
+  end
+
+
 end
