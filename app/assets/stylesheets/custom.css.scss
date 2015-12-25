@@ -1,0 +1,296 @@
+$navbar-default-bg: black;
+$navbar-margin-bottom: 0px;
+$navbar-border-radius: 0px;
+$navbar-hover: orange;
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+html,
+
+body {
+  z-index: 0;
+  position:relative;
+	margin:auto;
+	padding-top: 25px;
+
+}
+
+
+.announcement {
+  background-color:orange;
+}
+
+.announcement p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+/* BUTTONS */
+
+.btn-xl {
+  position: relative;
+  top: 17px;
+  font-size: 1.3em;
+  background-color:red;
+  color:#fff;
+  text-transform:uppercase;
+  padding:15px 20px;
+  border:1px solid transparent;
+  border-radius: 0px 6px 0px 6px;
+  margin-right: 58px;
+}
+
+
+.btn-xl:hover {
+  color:#fff;
+  text-decoration: none;
+  background-color: orange;
+  box-shadow:2px 2px 3px #777;
+}
+
+
+.btn-support{
+  background-color:red;
+}
+ 
+.btn-support:hover{
+  background-color:rgb(235,0,0);
+  border-bottom:2px solid black;
+}
+
+
+.btn-nav {
+  background-color:red;
+  color:#fff;
+  text-transform:uppercase;
+  padding:7px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 4px 4px;
+}
+
+
+
+.btn-nav:hover {
+  color:#fff;
+  background-color: orange;
+}
+
+ 
+.center {
+  text-align: center;
+}
+ 
+ 
+/* FOOTER */
+
+.footer {
+  z-index: 101;
+  margin:auto;
+  position:absolute;
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 200px;
+  padding:40px 0px 0px 0px;
+  background-color: #222;
+  width: 100%;
+  display:block;
+  clear:both;
+}
+
+
+.footer a {
+  color: #AAA;
+}
+
+.footer a:hover {
+  color: #FFCC00;
+  text-decoration:none;
+}
+
+.footer ul {
+  list-style:none;
+}
+
+.copyright {
+  color: #AAA;
+  bottom:0;
+  margin: auto;
+  border-top: thin solid #333;
+  padding-top: 5px;
+  top: 15px;
+}
+
+.copyright a {
+  color: #888;
+}
+
+.copyright a:hover {
+  color: #FFCC33;
+  text-decoration:none;
+}
+
+
+/* JUMBOTRON */
+ 
+.jumbotron {
+  position:relative;
+  background-image: asset-url('railroad.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover; /*sets width*/
+  height: 650px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ 
+.jumbotron .container {
+  position:relative;
+  top:155px;
+}
+
+
+.jumbotron h1 {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  margin-right: 58px;
+}
+
+.jumbotron h2 {
+  position: relative;
+  text-align: center;
+  color:#00;
+  text-shadow: 0px 0px 0px #222;
+  font-size:28px;
+  margin-right:58px;
+}
+
+.jumbotron .btn {
+  position: relative;
+  top: 8px;
+  color: #FFF;
+  padding: 15px 25px;
+  margin-right: 60px;
+}
+
+
+/* NAVIGATION BAR TOP */
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: orange;
+  text-decoration:none;
+}
+
+.navbar-default {
+  z-index: 1;
+  margin-top: 0px;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
+    color: rgb(200, 200, 200);
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: orange;
+}
+
+
+
+
+/* ***** POPULAR CATEGORIES * *****/
+
+.popular-categories {
+  background-color:#1f1f1f;
+  padding-bottom:60px;
+  padding-top:60px;
+  position:relative;
+  bottom:138px;
+               
+}
+ 
+.popular-categories h3{
+  color:#FFF;
+  background-color:rgba(255,255,255, 0.1);
+  font-size:24px;
+  position:relative;
+  left:45px;
+  padding:0 0;
+}
+ 
+.popular-categories li {
+  list-style:none;
+  padding-top:10px;
+  font-size:15px;
+}
+ 
+.popular-categories a {
+color:#CCCCCC;
+}
+
+.popular-categories a:hover {
+  color:#FFFFCC;
+}
+
+.staff-picks {
+  background-color:#efefef;
+  border-top: 1px solid #dbdbdb;
+  position:relative;
+  bottom:130px;
+}
+
+.staff-picks h2 {
+  color:#393c3d;
+  font-size: 24px;
+}
+
+.staff-picks p {
+  font-size:15px;
+  margin-top: 0px;
+  margin-bottom: 13px;
+  
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+  position:relative;
+  padding-bottom: 25px;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.box:hover {
+  background:#E5E5E5;
+  height:100%;
+}
+
+
+/* ***** TEXT ALIGN * *****/
+
+#text-center {
+  text-align: center;
+}
