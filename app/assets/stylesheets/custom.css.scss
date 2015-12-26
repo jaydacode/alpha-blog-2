@@ -46,7 +46,6 @@ body {
   margin-right: 58px;
 }
 
-
 .btn-xl:hover {
   color:#fff;
   text-decoration: none;
@@ -87,15 +86,21 @@ body {
 }
  
  
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+ 
+.description {
+  margin-top: 0;
+}
+
 /* FOOTER */
 
 .footer {
   z-index: 101;
   margin:auto;
   position:absolute;
-  padding-top: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   height: 200px;
   padding:40px 0px 0px 0px;
   background-color: #222;
