@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   
   resources:articles
   
+  get 'signup' => 'users#new'
+  resources :users, except: [:new] #can use this instead of post 'users' = 'users#create'
+  
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   
